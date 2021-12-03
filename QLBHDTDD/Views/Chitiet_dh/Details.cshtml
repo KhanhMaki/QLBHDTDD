@@ -1,0 +1,51 @@
+﻿@model QLBHDTDD.Models.Chitiet_dh
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chitiet_dh</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Don_dhs.Noi_nhan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Don_dhs.Noi_nhan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SanPhams.ID_dm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SanPhams.ID_dm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.So_luong_mua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.So_luong_mua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Don_gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Don_gia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_ct_hd }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

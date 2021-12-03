@@ -1,0 +1,27 @@
+﻿@model QLBHDTDD.Models.Danhmuc_sp
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Danhmuc_sp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ten_danhmuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ten_danhmuc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_dm }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

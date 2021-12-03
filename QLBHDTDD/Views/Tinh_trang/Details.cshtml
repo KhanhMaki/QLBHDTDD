@@ -1,0 +1,27 @@
+﻿@model QLBHDTDD.Models.Tinh_trang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tinh_trang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tinhtrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tinhtrang)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_tinh_trang }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

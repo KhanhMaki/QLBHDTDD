@@ -1,0 +1,46 @@
+﻿@model IEnumerable<QLBHDTDD.Models.Nguoi_dung>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ten)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ten)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_nd }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_nd }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_nd })
+        </td>
+    </tr>
+}
+
+</table>

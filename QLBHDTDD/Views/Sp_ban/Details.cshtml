@@ -1,0 +1,35 @@
+﻿@model QLBHDTDD.Models.Sp_ban
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sp_ban</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SanPhams.ID_dm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SanPhams.ID_dm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.So_luong_ban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.So_luong_ban)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_sp_ban }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

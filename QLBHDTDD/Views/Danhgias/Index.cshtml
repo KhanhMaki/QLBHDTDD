@@ -1,0 +1,58 @@
+﻿@model IEnumerable<QLBHDTDD.Models.Danhgia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SanPhams.ID_dm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ho_ten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ngay_gio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Noi_dung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dien_thoai)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SanPhams.ID_dm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ho_ten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ngay_gio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Noi_dung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dien_thoai)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_dg }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_dg }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_dg })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<QLBHDTDD.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_dm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ten_sp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Anh_sp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia_sp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.So_luong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kich_thuoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mau_sac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bo_nho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bao_hanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia_km)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batdau_km)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ketthuc_km)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_dm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ten_sp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Anh_sp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gia_sp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.So_luong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kich_thuoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mau_sac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bo_nho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bao_hanh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gia_km)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batdau_km)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ketthuc_km)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_sp }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_sp }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_sp })
+        </td>
+    </tr>
+}
+
+</table>
