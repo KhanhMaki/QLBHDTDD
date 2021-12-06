@@ -125,6 +125,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountModelsController.cs" />
     <Compile Include="Controllers\Chitiet_dhController.cs" />
     <Compile Include="Controllers\DanhgiasController.cs" />
     <Compile Include="Controllers\Danhmuc_spController.cs" />
@@ -143,7 +144,20 @@
     <Compile Include="Migrations\202112021604586_addtable.designer.cs">
       <DependentUpon>202112021604586_addtable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112040626141_Abc.cs" />
+    <Compile Include="Migrations\202112040626141_Abc.Designer.cs">
+      <DependentUpon>202112040626141_Abc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112040653357_add table account.cs" />
+    <Compile Include="Migrations\202112040653357_add table account.Designer.cs">
+      <DependentUpon>202112040653357_add table account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112040728526_Role.cs" />
+    <Compile Include="Migrations\202112040728526_Role.Designer.cs">
+      <DependentUpon>202112040728526_Role.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\Chitiet_dh.cs" />
     <Compile Include="Models\Danhgia.cs" />
     <Compile Include="Models\Danhmuc_sp.cs" />
@@ -152,6 +166,7 @@
     <Compile Include="Models\Khach_hang.cs" />
     <Compile Include="Models\Nguoi_dung.cs" />
     <Compile Include="Models\nv_hg.cs" />
+    <Compile Include="Models\Role .cs" />
     <Compile Include="Models\SanPham.cs" />
     <Compile Include="Models\Sp_ban.cs" />
     <Compile Include="Models\Tinh_trang.cs" />
@@ -258,6 +273,12 @@
     <Content Include="Views\Tinh_trang\Details.cshtml" />
     <Content Include="Views\Tinh_trang\Edit.cshtml" />
     <Content Include="Views\Tinh_trang\Index.cshtml" />
+    <Content Include="Views\AccountModels\Create.cshtml" />
+    <Content Include="Views\AccountModels\Delete.cshtml" />
+    <Content Include="Views\AccountModels\Details.cshtml" />
+    <Content Include="Views\AccountModels\Edit.cshtml" />
+    <Content Include="Views\AccountModels\Index.cshtml" />
+    <Content Include="Views\AccountModels\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,6 +316,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202112021604586_addtable.resx">
       <DependentUpon>202112021604586_addtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112040626141_Abc.resx">
+      <DependentUpon>202112040626141_Abc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112040653357_add table account.resx">
+      <DependentUpon>202112040653357_add table account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112040728526_Role.resx">
+      <DependentUpon>202112040728526_Role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

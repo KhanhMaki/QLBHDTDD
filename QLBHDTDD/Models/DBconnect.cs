@@ -21,6 +21,8 @@ namespace QLBHDTDD.Models
         public DbSet<nv_hg> nv_hgs { get; set; }
         public DbSet<Sp_ban> Sp_Bans { get; set; }
         public DbSet<Tinh_trang> Tinh_Trangs { get; set; }
+        public DbSet<AccountModel> AccountModels { get; set; }
+        public DbSet<Role> Roles { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

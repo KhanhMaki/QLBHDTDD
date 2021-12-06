@@ -25,6 +25,17 @@
                 <li class="nav-item active mx-2">@Html.ActionLink("Người dùng", "Index", "Nguoi_dung")</li>
                 <li class="nav-item active mx-2">@Html.ActionLink("Nhân viên giao hàng", "Index", "nv_hg")</li>
                 <li class="nav-item active mx-2">@Html.ActionLink("Tình trạng", "Index", "Tinh_trang")</li>
+                <li>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Đăng Nhập", "Login", "AccountModels")
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Đăng xuất", "Logoff", "AccountModels")
+                    }
+                </li>
+
             </ul>
         </div>
     </nav>

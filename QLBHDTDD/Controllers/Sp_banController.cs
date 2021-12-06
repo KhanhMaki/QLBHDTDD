@@ -10,6 +10,7 @@ using QLBHDTDD.Models;
 
 namespace QLBHDTDD.Controllers
 {
+    [Authorize]
     public class Sp_banController : Controller
     {
         private DBconnect db = new DBconnect();

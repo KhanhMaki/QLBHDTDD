@@ -13,7 +13,7 @@ namespace QLBHDTDD.Controllers
     public class Don_dhController : Controller
     {
         private DBconnect db = new DBconnect();
-
+        [Authorize]
         // GET: Don_dh
         public ActionResult Index()
         {

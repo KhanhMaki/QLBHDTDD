@@ -10,6 +10,7 @@ using QLBHDTDD.Models;
 
 namespace QLBHDTDD.Controllers
 {
+    [Authorize]
     public class Khach_hangController : Controller
     {
         private DBconnect db = new DBconnect();
