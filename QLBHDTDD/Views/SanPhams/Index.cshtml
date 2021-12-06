@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Sản phẩm</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Thêm mới", "Create")
 </p>
 <table class="table">
     <tr>
@@ -90,9 +90,9 @@
             @Html.DisplayFor(modelItem => item.Ketthuc_km)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID_sp }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID_sp }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID_sp })
+            @Html.ActionLink("Sửa", "Edit", new { id=item.ID_sp }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.ID_sp }) |
+            @Html.ActionLink("Xoá", "Delete", new { id=item.ID_sp })
         </td>
     </tr>
 }

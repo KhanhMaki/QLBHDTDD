@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Nhân Viên Giao Hàng</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Thêm mới", "Create")
 </p>
 <table class="table">
     <tr>
@@ -36,9 +36,9 @@
             @Html.DisplayFor(modelItem => item.Sdt_2)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID_nvgh }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID_nvgh }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID_nvgh })
+            @Html.ActionLink("Sửa", "Edit", new { id=item.ID_nvgh }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.ID_nvgh }) |
+            @Html.ActionLink("Xoá", "Delete", new { id=item.ID_nvgh })
         </td>
     </tr>
 }

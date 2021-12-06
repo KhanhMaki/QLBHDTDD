@@ -10,7 +10,7 @@ using QLBHDTDD.Models;
 
 namespace QLBHDTDD.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class DanhgiasController : Controller
     {
         private DBconnect db = new DBconnect();

@@ -10,7 +10,7 @@ using QLBHDTDD.Models;
 
 namespace QLBHDTDD.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class nv_hgController : Controller
     {
         private DBconnect db = new DBconnect();
