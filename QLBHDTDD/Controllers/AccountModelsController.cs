@@ -33,7 +33,7 @@ namespace QLBHDTDD.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (acc.Username == "admin" && acc.Password == "123456789")
+                if (acc.Username == "admin" && acc.Password == "Abc1234")
                 {
                     FormsAuthentication.SetAuthCookie(acc.Username, true);
                     return RedirectToLocal(returnUrl);
