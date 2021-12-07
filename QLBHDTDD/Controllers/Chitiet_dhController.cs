@@ -20,7 +20,6 @@ namespace QLBHDTDD.Controllers
             var chitiet_Dhs = db.Chitiet_Dhs.Include(c => c.Don_dhs).Include(c => c.SanPhams);
             return View(chitiet_Dhs.ToList());
         }
-
         // GET: Chitiet_dh/Details/5
         public ActionResult Details(int? id)
         {
@@ -62,7 +61,6 @@ namespace QLBHDTDD.Controllers
             ViewBag.ID_sp = new SelectList(db.SanPhams, "ID_sp", "ID_dm", chitiet_dh.ID_sp);
             return View(chitiet_dh);
         }
-
         // GET: Chitiet_dh/Edit/5
         public ActionResult Edit(int? id)
         {
